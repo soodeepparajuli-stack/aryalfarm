@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Mozzarella | Aryal Farm</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.jfif">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .inner-hero {
+            height: 50vh; min-height: 400px;
+            display: flex; align-items: center; justify-content: center;
+            text-align: center; color: var(--color-white); position: relative;
+        }
+        .inner-hero-bg {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1626082929543-eed6a7d18919?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover; background-position: center; z-index: -2;
+        }
+        .table-responsive { width: 100%; overflow-x: auto; margin-top: 2rem; }
+        .comparison-table { width: 100%; border-collapse: collapse; background: var(--color-white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); }
+        .comparison-table th, .comparison-table td { padding: 1.5rem; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .comparison-table th { background: var(--color-primary-light); color: var(--color-primary); font-family: var(--font-heading); font-weight: 600; font-size: 1.125rem;}
+        .comparison-table th:first-child, .comparison-table td:first-child { text-align: left; font-weight: 600; color: var(--color-text-main); }
+        .comparison-table tr:last-child td { border-bottom: none; }
+        .highlight-col { background: rgba(212, 175, 55, 0.05); font-weight: 500; }
+        
+        .use-case-card { position: relative; border-radius: var(--radius-lg); overflow: hidden; height: 300px; }
+        .use-case-card img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .use-case-card:hover img { transform: scale(1.1); }
+        .use-case-content { position: absolute; bottom: 0; left: 0; width: 100%; padding: 2rem; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); color: #fff; }
+        .use-case-content h3 { color: #fff; margin-bottom: 0.5rem; }
+        .use-case-content p { color: rgba(255,255,255,0.8); margin-bottom: 0; font-size: 0.875rem;}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo"><img src="assets/images/logo.jfif" alt="Aryal Farm Logo" style="height: 28px;"> Aryal Farm</a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="product.html">Products</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem;">Get in Touch</a>
+            </nav>
+            <div class="mobile-toggle"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+
+    <section class="inner-hero">
+        <div class="inner-hero-bg">
+            <img src="assets/images/farm.png" alt="Aryal Farm Green Pastures">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h1 class="reveal">Our Products</h1>
+            <p class="reveal" style="transition-delay: 0.1s; color: rgba(255,255,255,0.9); font-size: 1.25rem;">Crafted for culinary excellence.</p>
+        </div>
+    </section>
+
+    <!-- Mozzarella Spotlight -->
+    <section class="section section-light">
+        <div class="container grid-2">
+            <div class="img-wrap reveal">
+                <img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?q=80&w=1000&auto=format&fit=crop" alt="Premium Mozzarella Blocks">
+            </div>
+            <div class="reveal" style="transition-delay: 0.2s;">
+                <span class="badge">Flagship Product</span>
+                <h2>Chef-Grade Mozzarella Cheese</h2>
+                <p style="font-size: 1.125rem;">Specially formulated for B2B hospitality clients, our mozzarella provides the exact characteristics that professional kitchens demand: high meltability, beautiful blistering, and zero oil separation.</p>
+                <ul style="margin: 2rem 0;">
+                    <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 1rem;">
+                        <i class="fa-solid fa-check-circle" style="color: var(--color-whatsapp); margin-top: 0.2rem;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 0.2rem;">Superior Stretch Profile</h4>
+                            <p style="font-size: 0.875rem;">Maintains elasticity from oven to table.</p>
+                        </div>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 1rem;">
+                        <i class="fa-solid fa-check-circle" style="color: var(--color-whatsapp); margin-top: 0.2rem;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 0.2rem;">Optimal Moisture Control</h4>
+                            <p style="font-size: 0.875rem;">Prevents soggy crusts while remaining luxuriously creamy.</p>
+                        </div>
+                    </li>
+                    <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 1rem;">
+                        <i class="fa-solid fa-check-circle" style="color: var(--color-whatsapp); margin-top: 0.2rem;"></i>
+                        <div>
+                            <h4 style="margin-bottom: 0.2rem;">100% Vegetarian Rennet</h4>
+                            <p style="font-size: 0.875rem;">Suitable for a broader range of dietary requirements.</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-accent">Request Bulk Pricing</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="section section-tint">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Perfect For Your Menu</h2>
+                <p>Designed to perform across a variety of high-temperature culinary applications.</p>
+            </div>
+            <div class="grid-3 reveal" style="transition-delay: 0.2s;">
+                <div class="use-case-card">
+                    <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=800&auto=format&fit=crop" alt="Pizza">
+                    <div class="use-case-content">
+                        <h3>Wood-Fired Pizza</h3>
+                        <p>Perfect blistering and beautiful cheese pull.</p>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=800&auto=format&fit=crop" alt="Pasta">
+                    <div class="use-case-content">
+                        <h3>Baked Pasta Dishes</h3>
+                        <p>Creates a rich, golden, bubbly crust.</p>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop" alt="Continental & Fast Food">
+                    <div class="use-case-content">
+                        <h3>Continental & Fast Food</h3>
+                        <p>Ideal for sandwiches, lasagna, and appetizers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-title reveal">
+                <span class="badge">The Aryal Advantage</span>
+                <h2>Why Switch to Fresh Local Supply?</h2>
+            </div>
+            <div class="reveal table-responsive" style="transition-delay: 0.2s;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th class="highlight-col">Aryal Farm Mozzarella</th>
+                            <th>Imported Commercial Brands</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Freshness</td>
+                            <td class="highlight-col">Farm to Kitchen within 48 hours</td>
+                            <td>Months in transit and cold storage</td>
+                        </tr>
+                        <tr>
+                            <td>Supply Consistency</td>
+                            <td class="highlight-col">Highly reliable (Local production)</td>
+                            <td>Subject to import delays and shortages</td>
+                        </tr>
+                        <tr>
+                            <td>Stretch & Melt</td>
+                            <td class="highlight-col">Formulated for optimal stringiness</td>
+                            <td>Often rubbery due to preservatives</td>
+                        </tr>
+                        <tr>
+                            <td>Oil Separation</td>
+                            <td class="highlight-col">Zero pooling / No greasy texture</td>
+                            <td>Often separates under high heat</td>
+                        </tr>
+                        <tr>
+                            <td>Pricing Stability</td>
+                            <td class="highlight-col">Unchanging, fixed local pricing</td>
+                            <td>Fluctuates with customs and transport</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expanded Products List -->
+    <section class="section section-light" style="padding-top: 0;">
+        <div class="container">
+            <div class="section-title reveal">
+                <span class="badge">Beyond Mozzarella</span>
+                <h2>Comprehensive Dairy & Farm Products</h2>
+                <p>We don't just specialize in cheese. We cultivate and harvest our own crops to feed our livestock, ensuring a sustainable, closed-loop system! This guarantees the highest quality milk for our wide range of premium dairy products.</p>
+            </div>
+            <div class="grid-3 reveal">
+                <div class="use-case-card">
+                    <img src="assets/images/paneer.png" alt="Fresh Paneer & Cheese">
+                    <div class="use-case-content" style="background: linear-gradient(to top, rgba(31,93,58,0.9), transparent);">
+                        <h3>Paneer & Assorted Cheese</h3>
+                        <p>Rich, unyielding paneer and local cheeses crafted daily.</p>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <img src="assets/images/ghee.png" alt="Pure Ghee and Butter">
+                    <div class="use-case-content" style="background: linear-gradient(to top, rgba(31,93,58,0.9), transparent);">
+                        <h3>Pure Ghee & Butter</h3>
+                        <p>Traditional clarification process for deep, nutty aromas.</p>
+                    </div>
+                </div>
+                <div class="use-case-card">
+                    <img src="assets/images/milk.png" alt="Fresh Milk & Yogurt">
+                    <div class="use-case-content" style="background: linear-gradient(to top, rgba(31,93,58,0.9), transparent);">
+                        <h3>Fresh Milk, Cream & Yogurt</h3>
+                        <p>Untouched, farm-fresh dairy staples for everyday culinary use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main CTA -->
+    <section class="cta-banner">
+        <div class="container reveal">
+            <h2>Ready to Enhance Your Culinary Creations?</h2>
+            <div class="hero-btns" style="margin-top: 2rem;">
+                <a href="contact.html" class="btn btn-accent" style="color: #fff;">Request Bulk Pricing</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Exact same footer as index -->
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 style="color: #fff; margin-bottom: 1rem; font-family: var(--font-heading); font-size: 1.5rem;">Aryal Multipurpose <br>Agricultural Farm <span style="font-size: 0.6em; font-weight: 300; display:block; margin-top: 0.5rem;">Pvt. Ltd.</span></h3>
+                    <p>Dhunibesi-01<br>Dhading, Bagmati Province, Nepal</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>Biprash Aryal (HR Manager)</li>
+                        <li><a href="tel:+977014376271">01-4376271</a></li>
+                        <li><a href="tel:+9779869183563">+977-9869183563</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Business Hours</h4>
+                    <ul class="footer-links">
+                        <li>24/7</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/9779869183563" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
