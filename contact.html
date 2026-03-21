@@ -74,38 +74,42 @@
                     <h2 style="margin-bottom: 0.5rem;">Send an Inquiry</h2>
                     <p style="margin-bottom: 2rem;">Please fill out the form below to request samples, bulk pricing, or schedule a visit.</p>
                     
-                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Form submitted! We will contact you shortly.');">
+                    <form action="https://formsubmit.co/contact@aryalfarm.com.np" method="POST">
+                        <input type="hidden" name="_subject" value="New Website Inquiry - Aryal Farm">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
                         <div class="grid-2" style="gap: 1.5rem;">
                             <div class="form-group">
                                 <label for="name">Full Name</label>
-                                <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                                <input type="text" id="name" name="Name" class="form-control" placeholder="John Doe" required>
                             </div>
                             <div class="form-group">
                                 <label for="restaurant">Restaurant / Business Name</label>
-                                <input type="text" id="restaurant" class="form-control" placeholder="Pizza House Pvt Ltd" required>
+                                <input type="text" id="restaurant" name="Business Name" class="form-control" placeholder="Pizza House Pvt Ltd" required>
                             </div>
                         </div>
                         <div class="grid-2" style="gap: 1.5rem;">
                             <div class="form-group">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" class="form-control" placeholder="+977-9800000000" required>
+                                <input type="tel" id="phone" name="Phone" class="form-control" placeholder="+977-9800000000" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Email Address</label>
-                                <input type="email" id="email" class="form-control" placeholder="john@example.com">
+                                <input type="email" id="email" name="Email" class="form-control" placeholder="john@example.com" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="interest">Interested In</label>
-                            <select id="interest" class="form-control">
-                                <option value="mozzarella">Bulk Mozzarella Cheese</option>
-                                <option value="sample">Product Samples</option>
-                                <option value="other">Other Inquiry</option>
+                            <select id="interest" name="Interest" class="form-control">
+                                <option value="Bulk Mozzarella Cheese">Bulk Mozzarella Cheese</option>
+                                <option value="Product Samples">Product Samples</option>
+                                <option value="Other Inquiry">Other Inquiry</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" rows="5" class="form-control" placeholder="Tell us about your expected volume and requirements..."></textarea>
+                            <textarea id="message" name="Message" rows="5" class="form-control" placeholder="Tell us about your expected volume and requirements..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fa-solid fa-paper-plane" style="margin-right: 0.5rem;"></i> Submit Inquiry</button>
                     </form>
@@ -114,6 +118,17 @@
                 <!-- Info Side -->
                 <div class="contact-info-side">
                     <h2 style="margin-bottom: 2rem;">Contact Details</h2>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p style="margin-bottom: 0; color: var(--color-text-main);">
+                                <a href="mailto:contact@aryalfarm.com.np" style="color: inherit; text-decoration: none;">contact@aryalfarm.com.np</a><br>
+                                <span style="font-size: 0.875rem;"><a href="mailto:aryalfarmdhading@gmail.com" style="color: var(--color-text-muted); text-decoration: none;">aryalfarmdhading@gmail.com</a></span>
+                            </p>
+                        </div>
+                    </div>
                     
                     <div class="info-item">
                         <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
@@ -127,7 +142,7 @@
                         <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
                         <div>
                             <h4>Phone</h4>
-                            <p style="margin-bottom: 0; color: var(--color-text-main);">+977-01-4376271 (Landline)<br>+977-9869183563 (Mobile/WhatsApp)</p>
+                            <p style="margin-bottom: 0; color: var(--color-text-main);">01-4376271 (Landline)<br>+977-9869183563 (Mobile/WhatsApp)</p>
                             <a href="https://wa.me/9779869183563" class="btn btn-accent" style="margin-top: 1rem; padding: 0.5rem 1rem; border-radius: var(--radius-sm); font-size: 0.875rem;"><i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem;"></i> Chat on WhatsApp</a>
                         </div>
                     </div>
@@ -136,7 +151,7 @@
                         <div class="info-icon"><i class="fa-solid fa-user-tie"></i></div>
                         <div>
                             <h4>Contact Person</h4>
-                            <p style="margin-bottom: 0; color: var(--color-text-main);">Biprash Aryal<br><span style="font-size: 0.875rem; color: var(--color-text-muted);">HR Manager</span></p>
+                            <p style="margin-bottom: 0; color: var(--color-text-main);">Biprash Aryal<br><span style="font-size: 0.875rem; color: var(--color-text-muted);">Managing Director</span></p>
                         </div>
                     </div>
                     
@@ -144,7 +159,7 @@
                         <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
                         <div>
                             <h4>Business Hours</h4>
-                            <p style="margin-bottom: 0; color: var(--color-text-main);">Sunday - Friday: 8:00 AM - 6:00 PM<br>Saturday: Closed</p>
+                            <p style="margin-bottom: 0; color: var(--color-text-main);">24/7</p>
                         </div>
                     </div>
                 </div>
@@ -177,7 +192,8 @@
                 <div>
                     <h4>Contact</h4>
                     <ul class="footer-links">
-                        <li>Biprash Aryal (HR Manager)</li>
+                        <li>Biprash Aryal (Managing Director)</li>
+                        <li><a href="mailto:contact@aryalfarm.com.np">contact@aryalfarm.com.np</a></li>
                         <li><a href="tel:+977014376271">01-4376271</a></li>
                         <li><a href="tel:+9779869183563">+977-9869183563</a></li>
                     </ul>
